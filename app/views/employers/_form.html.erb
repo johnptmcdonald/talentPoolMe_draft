@@ -1,4 +1,4 @@
-<%= form_for(@employer) do |f| %>
+<%= form_for(@employer, :html => { multipart: true }) do |f| %>
   <% if @employer.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@employer.errors.count, "error") %> prohibited this employer from being saved:</h2>
@@ -28,6 +28,10 @@
     <%= f.text_field :industry %>
   </div>
   <div class="field">
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </div>
+  <!-- <div class="field">
     <%= f.label :size %><br>
     <%= f.text_field :size %>
   </div>
@@ -50,7 +54,7 @@
   <div class="field">
     <%= f.label :status %><br>
     <%= f.text_field :status %>
-  </div>
+  </div> -->
   <div class="actions">
     <%= f.submit %>
   </div>

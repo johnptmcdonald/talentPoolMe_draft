@@ -1,6 +1,14 @@
 source 'https://rubygems.org'
 
+
+gem 'carrierwave'
+gem 'fog'
+gem 'figaro'
+
 gem 'rails_12factor', group: :production
+
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.rc1'
