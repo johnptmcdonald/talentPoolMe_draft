@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'carrierwave'
 gem 'fog'
 gem 'figaro'
+gem 'mini_magick'
 
 gem 'rails_12factor', group: :production
 
