@@ -5,6 +5,7 @@ gem 'carrierwave'
 gem 'fog'
 gem 'figaro'
 gem 'mini_magick'
+gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
 
 gem 'rails_12factor', group: :production
 
