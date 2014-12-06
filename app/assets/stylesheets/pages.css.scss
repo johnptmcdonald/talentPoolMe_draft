@@ -20,12 +20,27 @@ header .navbar-default {
 	.navbar-nav li a {
 		color: white;
 	}
+
+	.open a {
+		color: white;
+		background-color: #50b3f9;
+	}
+
+
+	.dropdown-menu {
+		background-color: #50b3f9;
+		margin-top: 2px;
+
+
+
+		
+	}
 }
 
 body .intro {
   background-color: #ffab52;
   text-align: center;
-  margin-top: -20px;
+  margin-top: -72px;
   padding: 100px;
 
   h2, h3 {
