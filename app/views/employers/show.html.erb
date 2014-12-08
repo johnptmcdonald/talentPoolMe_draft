@@ -51,6 +51,9 @@
   <strong>Status:</strong>
   <%= @employer.status %>
 </p> -->
-
+<div id="like">
+  <%= render 'likes/like_button', :product => @product %>
+</div>
+<br>
 <%= link_to 'Edit', edit_employer_path(@employer) %> |
 <%= link_to 'Back', employers_path %>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resources :likes, :only => [:create, :destroy]
+
   devise_for :users
   resources :employers
 

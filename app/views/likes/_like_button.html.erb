@@ -1,0 +1,13 @@
+<% current_user = User.first %>
+
+<% if like = current_user.likes.where(employer_id: @employer.id).first %>
+	<%= form_for like, :html => { :method => :delete }, :remote => true do |f| %>
+		<%= f.submit "Unlike" %>
+	<% end %>
+<% else %>
+	<%= form_for current_user.likes.build(:employer_id => @employer.id), :remote => true do |f| %>
+		<%= f.hidden_field :employer_id %>
+		<%= f.hidden_field :user_id %>
+		<%= f.submit "Like" %>
+	<% end %>
+<% end %>

@@ -4,7 +4,11 @@ class EmployersController < ApplicationController
   # GET /employers
   # GET /employers.json
   def index
-    @employers = Employer.all
+    @search = Employer.search(params[:q])
+
+
+    @employers = @search.result
+    
   end
 
   # GET /employers/1
